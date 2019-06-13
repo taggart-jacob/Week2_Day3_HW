@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100sp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_first_name"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/last_name"
+        android:textSize="20dp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/etFirstName"/>
+
+    <EditText
+        android:id="@+id/etStreetAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/street_address"
+        android:textSize="20dp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/etLastName"/>
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/city"
+        android:textSize="20dp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/etStreetAddress"/>
+
+    <EditText
+        android:id="@+id/etState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/state"
+        android:textSize="20dp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/etCity"/>
+
+    <EditText
+        android:id="@+id/etZip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/zip"
+        android:textSize="20dp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/etState"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_marginTop="20sp"
+        android:textSize="17dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etZip"
+        android:onClick="onClick"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

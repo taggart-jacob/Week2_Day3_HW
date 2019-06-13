@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Week2_Day3_HW</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="street_address">Street Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip">ZIP</string>
+    <string name="submit">Submit</string>
+</resources>
